@@ -19,9 +19,6 @@ class InProcessMessagingConfig {
 
     @Bean
     Source source(AddressBook addressBook, InProcessMessagingProperties config) {
-
-        System.out.println("********* Threads: " + config.getSource().getThreads());
-
         return new InProcessSource(
                 (InProcessAddressBook) addressBook,
                 Executors.newFixedThreadPool(config.getSource().getThreads()));

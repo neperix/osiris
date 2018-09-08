@@ -16,6 +16,6 @@ public class InProcessMessagingProperties {
     @Data
     public static final class SourceProperties {
 
-        private int threads = 10;
+        private int threads = 5;
     }
 }
