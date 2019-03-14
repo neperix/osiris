@@ -19,6 +19,8 @@
         <module>messaging</module>
         <module>messaging-annotations</module>
         <module>messaging-inprocess-adapter</module>
+        <module>security</module>
+        <module>security-jwt</module>
     </modules>
 
     <dependencyManagement>
@@ -36,6 +38,16 @@
             <dependency>
                 <groupId>com.neperix.osiris</groupId>
                 <artifactId>messaging-inprocess-adapter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.neperix.osiris</groupId>
+                <artifactId>security</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.neperix.osiris</groupId>
+                <artifactId>security-jwt</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
