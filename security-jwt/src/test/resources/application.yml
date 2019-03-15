@@ -1,0 +1,6 @@
+osiris:
+  security:
+    jwt:
+      secret: osiris
+      issuer: osiris
+      timeToLiveInHours: 2
