@@ -19,7 +19,21 @@
         <java.version>11</java.version>
         <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
         <lombok.version>1.18.2</lombok.version>
+        <nexus.baseUrl>http://localhost:8081</nexus.baseUrl>
     </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>neperix-repo-releases</id>
+            <name>Neperix modules</name>
+            <url>${nexus.baseUrl}/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>neperix-repo-snapshots</id>
+            <name>Neperix snapshots</name>
+            <url>${nexus.baseUrl}/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
     <modules>
         <module>messaging</module>
